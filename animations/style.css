@@ -1,0 +1,265 @@
+.container {
+    animation-name: mymove;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+
+
+.bus {
+    width: 650px;
+    height: 250px;
+    background-color: rgb(247, 232, 73);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 120px;
+}
+
+.wheel__part {
+    position: absolute;
+    width: 114px;
+    height: 65px;
+    background-color: rgb(245, 220, 0);
+    border-radius: 5rem 5rem 0 0;
+    left: 4.4%;
+    top: 74%;
+}
+
+.wheel__part:nth-child(1) {
+    left: 31.4%;
+    top: 74%;
+}
+
+.bus__bottom {
+    position: absolute;
+    width: 650px;
+    height: 12px;
+    background-color: rgb(245, 220, 0);
+}
+
+.wheel {
+    width: 55px;
+    height: 55px;
+    border: 20px solid black;
+    border-radius: 50%;
+    background-color: gray;
+    animation-name: wheel;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+
+.wheel:nth-child(1) {
+    position: absolute;
+    left: 5%;
+    top: 78%;
+}
+
+.wheel:nth-child(2) {
+    position: absolute;
+    left: 32%;
+    top: 78%;
+}
+
+.inside__circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(76, 76, 76);
+
+}
+
+.inside__circle:nth-child(1) {
+    position: absolute;
+    left: 25%;
+    top: 24%;
+}
+
+.inside__circle:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    top: 24%;
+}
+
+.line {
+    position: absolute;
+    width: 55px;
+    height: 5px;
+    background-color: rgb(76, 76, 76);
+    top: 40%;
+    left: -45%;
+}
+
+.line:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.line:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+.line:nth-child(3) {
+    transform: rotate(135deg);
+}
+
+.line__2 {
+    position: absolute;
+    width: 55px;
+    height: 5px;
+    background-color: rgb(76, 76, 76);
+    top: 45%;
+    left: auto;
+}
+
+.line__2:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.line__2:nth-child(3) {
+    transform: rotate(90deg);
+}
+
+.line__2:nth-child(4) {
+    transform: rotate(135deg);
+}
+
+.long__lines {
+    position: absolute;
+    width: 328px;
+    height: 3px;
+    background-color: rgb(52, 51, 51);
+    border-radius: 15%;
+    left: 3%;
+    top: 45%;
+}
+
+.long__lines:nth-child(1) {
+    left: 3%;
+    top: 57%;
+}
+
+.long__lines:nth-child(2) {
+    left: 3%;
+    top: 69%;
+}
+
+.image {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    top: 7%;
+    left: 4%;
+    border-radius: 30%;
+}
+
+.image:nth-child(1) {
+    top: 7%;
+    left: 11%;
+}
+
+.image:nth-child(2) {
+    top: 7%;
+    left: 18%;
+}
+
+.image:nth-child(3) {
+    top: 7%;
+    left: 32%;
+}
+
+.door__frame {
+    position: absolute;
+    width: 105px;
+    height: 205px;
+    background-color: rgb(250, 226, 16);
+    border-radius: 7%;
+    left: 23.5%;
+    top: 12%;
+}
+
+.bus__door {
+    position: absolute;
+    width: 45px;
+    height: 195px;
+    background-color: lightblue;
+    border-radius: 7%;
+    left: 23.8%;
+    top: 14%;
+}
+
+.bus__door:nth-child(1) {
+    left: 26.8%;
+    top: 14%;
+}
+
+.stair {
+    position: absolute;
+    width: 120px;
+    height: 32px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem 2rem 2rem 2rem;
+    left: 23%;
+    top: 92%;
+}
+
+.inscription {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 5.3%;
+    top: 38%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.bus__light {
+    position: absolute;
+    width: 12px;
+    height: 48px;
+    background-color: rgb(245, 57, 57);
+    border-radius: 0 2rem 2rem 0;
+    left: 0%;
+    top: 64%;
+}
+
+.bus__light:nth-child(1) {
+    position: absolute;
+    width: 28px;
+    height: 22px;
+    background-color: rgb(230, 225, 216);
+    border-radius: 2rem 0 0 2rem;
+    left: 37.796%;
+    top: 62%;
+}
+
+.bus__light:nth-child(2) {
+    width: 13px;
+    height: 14px;
+    background-color: rgb(245, 57, 57);
+    border-radius: 2rem 0 0 2rem;
+    left: 38.7%;
+    top: 74%;
+}
+
+@keyframes mymove {
+    from {
+        left: -660px;
+    }
+
+    to {
+        left: 100%;
+    }
+
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
